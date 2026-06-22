@@ -1,9 +1,11 @@
 from django import forms
 from .models import Profile
 from django.contrib.auth import get_user_model
+
 class LoginForm(forms.Form):
     username = forms.CharField()
     password = forms.CharField(widget=forms.PasswordInput)
+    
 class UserRegistrationForm(forms.ModelForm):
     password = forms.CharField(
         label='Password',

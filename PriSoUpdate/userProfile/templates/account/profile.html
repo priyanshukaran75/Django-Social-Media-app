@@ -32,11 +32,21 @@
                 @{{ profile.user.username }}
             </p>
             <p><i>joined on {{ profile.created }}</i></p>
+             <div class="followers-following">
+                <div class="followers">
+                   <span class="count">{{ profile.follower.count }}</span>
+                    <span class="label">Followers</span>
+                </div>
+                <div class="following">
+                    <span class="count">{{ profile.following.count }}</span>
+                    <span class="label">Following</span>
+                </div>
+            </div>  
         </div>
         <div class="edit-option">
             <a href="{% url "edit" %}"> <i>Edit</i></a>
         </div>
-
+        
     </div>
     <div class="profile-info">
             <h3>Bio</h3>

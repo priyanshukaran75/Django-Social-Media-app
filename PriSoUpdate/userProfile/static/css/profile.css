@@ -57,6 +57,40 @@
     line-height:1.7;
     color:#333;
 }
+.followers-following{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+}
+
+.followers,
+.following{
+    flex:1;
+    background:#f8f9fb;
+    border-radius:12px;
+    padding:12px;
+    text-align:center;
+    transition:.2s;
+}
+
+.followers:hover,
+.following:hover{
+    background:#eef3ff;
+}
+
+.followers .count,
+.following .count{
+    display:block;
+    font-size:1.2rem;
+    font-weight:700;
+    color:#0a66c2;
+}
+
+.followers .label,
+.following .label{
+    font-size:.85rem;
+    color:#6b7280;
+}
 
 /* ==========================
    POSTS
